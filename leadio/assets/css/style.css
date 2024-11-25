@@ -1,0 +1,709 @@
+/*----------------------------------------*/
+/*----- TABLE OF CONTENTS -----*/
+/*----------------------------------------*/
+/*
+1  Generate Google Fonts
+2  General Styles
+3  Font Settings
+4  Theme Utilities
+5  Lists
+6  Buttons
+7  Layout
+8  Sections
+9  Hero Section
+10 Header
+11 Responsive header
+12 Footer
+13 Forms
+14 Elements
+15 Sliders
+16 Misc
+*/
+/*----------------------------------------*/
+/*----- 1 Generate Google Fonts  -----*/
+/*----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700;800&family=Lexend:wght@400;600;700&display=swap');
+/*----------------------------------------*/
+/*----- 2 General Styles -----*/
+/*----------------------------------------*/
+body { position: relative; -webkit-font-smoothing: antialiased; -webkit-animation: fix 1s 1; animation: fix 1s 1; overflow-x: hidden; }
+h1, h2, h3, h4, h5, h6 { margin-bottom: 20px; }
+a, a:hover { text-decoration: none; }
+a:focus { outline: none; }
+img { max-width: 100%; }
+p { margin: 0 0 10px 0; }
+p:last-child { margin-bottom: 0; }
+/*----------------------------------------*/
+/*----- 3 Font Settings -----*/
+/*----------------------------------------*/
+body { font-family: 'Lexend', sans-serif; font-size: 16px; line-height: 1.9em; font-weight: 400; }
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-family: 'Exo 2', sans-serif; font-weight: 700; }
+h1, h1 a { font-size: 5.000em; line-height: 1.2em; }
+h2, h2 a { font-size: 3.000em; /*font-size: 3.000em;*/ line-height: 1.1em; letter-spacing: -1px; }
+h3, h3 a { font-size: 2.250em; line-height: 1.3em; letter-spacing: -1px; }
+h4, h4 a { font-size: 1.875em; line-height: 1.2em; letter-spacing: -1px; }
+h5, h5 a { font-size: 1.250em; line-height: 1.2em; }
+h6, h6 a { font-size: 1.000em; line-height: 1.2em; }
+/* font families */
+.lio-btn, input[type="submit"], input[type="reset"], .lio-testimonial-content::before { font-family: 'Exo 2', sans-serif; font-weight: 800; }
+/* text sizes */
+.text-size-xxl { font-size: 80px; line-height: 84px; }
+.text-size-xl { font-size: 48px; line-height: 52px; }
+.text-size-lg { font-size: 30px; line-height: 40px; }
+.text-size-md { font-size: 22px; line-height: 35px; }
+.text-size-sm { font-size: 14px; line-height: 28px; }
+.text-size-xs { font-size: 12px; line-height: 18px; }
+/* font weights - dafult for template*/
+.font-weight-regular { font-weight: 400; }
+.font-weight-bold { font-weight: 700; }
+/* font weights in template - other than normal and bold */
+.lio-btn, input[type="submit"], input[type="reset"], .lio-header-contact, .lio-accordion .accordion-button { font-weight: 700; }
+.main-navigation .sf-menu:first-child > li a, .lio-hero-subtext, .lio-tagline { font-weight: 600; }
+/* other font weights */
+.font-weight-200 { font-weight: 200; }
+.font-weight-300 { font-weight: 300; }
+.font-weight-500 { font-weight: 500; }
+.font-weight-600 { font-weight: 600; }
+.font-weight-800 { font-weight: 800; }
+/* line height */
+.line-height-null { line-height: 1em; }
+/*----------------------------------------*/
+/*----- 4 Theme Utilities -----*/
+/*----------------------------------------*/
+/*== margins ==*/
+.lio-m-auto { margin: 0 auto !important }
+.lio-m-0 { margin: 0 !important }
+.lio-mt-0, .lio-my-0 { margin-top: 0 !important }
+.lio-mr-0, .lio-mx-0 { margin-right: 0 !important }
+.lio-mb-0, .lio-my-0 { margin-bottom: 0 !important }
+.lio-ml-0, .lio-mx-0 { margin-left: 0 !important }
+.lio-m-5 { margin: 5px !important }
+.lio-mt-5, .lio-my-5 { margin-top: 5px !important }
+.lio-mr-5, .lio-mx-5 { margin-right: 5px !important }
+.lio-mb-5, .lio-my-5 { margin-bottom: 5px !important }
+.lio-ml-5, .lio-mx-5 { margin-left: 5px !important }
+.lio-m-10 { margin: 10px }
+.lio-mt-10, .lio-my-10 { margin-top: 10px !important }
+.lio-mr-10, .lio-mx-10 { margin-right: 10px !important }
+.lio-mb-10, .lio-my-10 { margin-bottom: 10px !important }
+.lio-ml-10, .lio-mx-10 { margin-left: 10px !important }
+.lio-m-15 { margin: 15px }
+.lio-mt-15, .lio-my-15 { margin-top: 15px !important }
+.lio-mr-15, .lio-mx-15 { margin-right: 15px !important }
+.lio-mb-15, .lio-my-15 { margin-bottom: 15px !important }
+.lio-ml-15, .lio-mx-15 { margin-left: 15px !important }
+.lio-m-20 { margin: 20px !important }
+.lio-mt-20, .lio-my-20 { margin-top: 20px !important }
+.lio-mr-20, .lio-mx-20 { margin-right: 20px !important }
+.lio-mb-20, .lio-my-20 { margin-bottom: 20px !important }
+.lio-ml-20, .lio-mx-20 { margin-left: 20px !important }
+.lio-m-30 { margin: 30px !important }
+.lio-mt-30, .lio-my-30 { margin-top: 30px !important }
+.lio-mr-30, .lio-mx-30 { margin-right: 30px !important }
+.lio-mb-30, .lio-my-30 { margin-bottom: 30px !important }
+.lio-ml-30, .lio-mx-30 { margin-left: 30px !important }
+.lio-m-35 { margin: 35px !important }
+.lio-mt-35, .lio-my-35 { margin-top: 35px !important }
+.lio-mr-35, .lio-mx-35 { margin-right: 35px !important }
+.lio-mb-35, .lio-my-35 { margin-bottom: 35px !important }
+.lio-ml-35, .lio-mx-35 { margin-left: 35px !important }
+.lio-m-40 { margin: 40px !important }
+.lio-mt-40, .lio-my-40 { margin-top: 40px !important }
+.lio-mr-40, .lio-mx-40 { margin-right: 40px !important }
+.lio-mb-40, .lio-my-40 { margin-bottom: 40px !important }
+.lio-ml-40, .lio-mx-40 { margin-left: 40px !important }
+.lio-m-50 { margin: 50px !important }
+.lio-mt-50, .lio-my-50 { margin-top: 50px !important }
+.lio-mr-50, .lio-mx-50 { margin-right: 50px !important }
+.lio-mb-50, .lio-my-50 { margin-bottom: 50px !important }
+.lio-ml-50, .lio-mx-50 { margin-left: 50px !important }
+.lio-m-60 { margin: 60px !important }
+.lio-mt-60, .lio-my-60 { margin-top: 60px !important }
+.lio-mr-60, .lio-mx-60 { margin-right: 60px !important }
+.lio-mb-60, .lio-my-60 { margin-bottom: 60px !important }
+.lio-ml-60, .lio-mx-60 { margin-left: 60px !important }
+.lio-m-70 { margin: 70px !important }
+.lio-mt-70, .lio-my-70 { margin-top: 70px !important }
+.lio-mr-70, .lio-mx-70 { margin-right: 70px !important }
+.lio-mb-70, .lio-my-70 { margin-bottom: 70px !important }
+.lio-ml-70, .lio-mx-70 { margin-left: 70px !important }
+.lio-m-80 { margin: 80px !important }
+.lio-mt-80, .lio-my-80 { margin-top: 80px !important }
+.lio-mr-80, .lio-mx-80 { margin-right: 80px !important }
+.lio-mb-80, .lio-my-80 { margin-bottom: 80px !important }
+.lio-ml-80, .lio-mx-80 { margin-left: 80px !important }
+.lio-m-90 { margin: 90px !important }
+.lio-mt-90, .lio-my-90 { margin-top: 90px !important }
+.lio-mr-90, .lio-mx-90 { margin-right: 90px !important }
+.lio-mb-90, .lio-my-90 { margin-bottom: 90px !important }
+.lio-ml-90, .lio-mx-90 { margin-left: 90px !important }
+.lio-m-100 { margin: 100px !important }
+.lio-mt-100, .lio-my-100 { margin-top: 100px !important }
+.lio-mr-100, .lio-mx-100 { margin-right: 100px !important }
+.lio-mb-100, .lio-my-100 { margin-bottom: 100px !important }
+.lio-ml-100, .lio-mx-100 { margin-left: 100px !important }
+/* minus left margins */
+.lio-ml-minus10 { margin-left: -10px !important; }
+.lio-ml-minus15 { margin-left: -15px !important; }
+.lio-ml-minus20 { margin-left: -20px !important; }
+.lio-ml-minus30 { margin-left: -30px !important; }
+.lio-ml-minus40 { margin-left: -40px !important; }
+.lio-ml-minus50 { margin-left: -50px !important; }
+/* minus top margins */
+.lio-mt-minus10 { margin-top: -10px !important; }
+.lio-mt-minus20 { margin-top: -20px !important; }
+.lio-mt-minus30 { margin-top: -30px !important; }
+.lio-mt-minus40 { margin-top: -40px !important; }
+.lio-mt-minus50 { margin-top: -50px !important; }
+.lio-mt-minus60 { margin-top: -60px !important; }
+.lio-mt-minus70 { margin-top: -70px !important; }
+.lio-mt-minus80 { margin-top: -80px !important; }
+.lio-mt-minus90 { margin-top: -90px !important; }
+.lio-mt-minus100 { margin-top: -100px !important; }
+.lio-mt-minus110 { margin-top: -110px !important; }
+.lio-mt-minus120 { margin-top: -120px !important; }
+.lio-mt-minus130 { margin-top: -130px !important; }
+.lio-mt-minus140 { margin-top: -140px !important; }
+.lio-mt-minus150 { margin-top: -150px !important; }
+/* minus bottom margins */
+.lio-mb-minus10 { margin-bottom: -10px !important; }
+.lio-mb-minus20 { margin-bottom: -20px !important; }
+.lio-mb-minus30 { margin-bottom: -30px !important; }
+.lio-mb-minus40 { margin-bottom: -40px !important; }
+.lio-mb-minus50 { margin-bottom: -50px !important; }
+.lio-mb-minus60 { margin-bottom: -60px !important; }
+.lio-mb-minus70 { margin-bottom: -70px !important; }
+.lio-mb-minus80 { margin-bottom: -80px !important; }
+.lio-mb-minus90 { margin-bottom: -90px !important; }
+.lio-mb-minus100 { margin-bottom: -100px !important; }
+.lio-mb-minus110 { margin-bottom: -110px !important; }
+.lio-mb-minus120 { margin-bottom: -120px !important; }
+.lio-mb-minus130 { margin-bottom: -130px !important; }
+.lio-mb-minus140 { margin-bottom: -140px !important; }
+.lio-mb-minus150 { margin-bottom: -150px !important; }
+/* minus side margins */
+.lio-mx-minus15 { margin-left: -15px !important; margin-right: -15px !important; }
+/*== paddings ==*/
+.lio-p-0 { padding: 0 !important }
+.lio-pt-0, .lio-py-0 { padding-top: 0 !important }
+.lio-pr-0, .lio-px-0 { padding-right: 0 !important }
+.lio-pb-0, .lio-py-0 { padding-bottom: 0 !important }
+.lio-pl-0, .lio-px-0 { padding-left: 0 !important }
+.lio-p-5 { padding: 5px !important }
+.lio-pt-5, .lio-py-5 { padding-top: 5px !important }
+.lio-pr-5, .lio-px-5 { padding-right: 5px !important }
+.lio-pb-5, .lio-py-5 { padding-bottom: 5px !important }
+.lio-pl-5, .lio-px-5 { padding-left: 5px !important }
+.lio-p-10 { padding: 10px !important }
+.lio-pt-10, .lio-py-10 { padding-top: 10px !important }
+.lio-pr-10, .lio-px-10 { padding-right: 10px !important }
+.lio-pb-10, .lio-py-10 { padding-bottom: 10px !important }
+.lio-pl-10, .lio-px-10 { padding-left: 10px !important }
+.lio-p-15 { padding: 15px !important }
+.lio-pt-15, .lio-py-15 { padding-top: 15px !important }
+.lio-pr-15, .lio-px-15 { padding-right: 15px !important }
+.lio-pb-15, .lio-py-15 { padding-bottom: 15px !important }
+.lio-pl-15, .lio-px-15 { padding-left: 15px !important }
+.lio-p-20 { padding: 20px !important }
+.lio-pt-20, .lio-py-20 { padding-top: 20px !important }
+.lio-pr-20, .lio-px-20 { padding-right: 20px !important }
+.lio-pb-20, .lio-py-20 { padding-bottom: 20px !important }
+.lio-pl-20, .lio-px-20 { padding-left: 20px !important }
+.lio-p-30 { padding: 30px !important }
+.lio-pt-30, .lio-py-30 { padding-top: 30px !important }
+.lio-pr-30, .lio-px-30 { padding-right: 30px !important }
+.lio-pb-30, .lio-py-30 { padding-bottom: 30px !important }
+.lio-pl-30, .lio-px-30 { padding-left: 30px !important }
+.lio-p-40 { padding: 40px !important }
+.lio-pt-40, .lio-py-40 { padding-top: 40px !important }
+.lio-pr-40, .lio-px-40 { padding-right: 40px !important }
+.lio-pb-40, .lio-py-40 { padding-bottom: 40px !important }
+.lio-pl-40, .lio-px-40 { padding-left: 40px !important }
+.lio-p-50 { padding: 50px !important }
+.lio-pt-50, .lio-py-50 { padding-top: 50px !important }
+.lio-pr-50, .lio-px-50 { padding-right: 50px !important }
+.lio-pb-50, .lio-py-50 { padding-bottom: 50px !important }
+.lio-pl-50, .lio-px-50 { padding-left: 50px !important }
+.lio-p-60 { padding: 60px !important }
+.lio-pt-60, .lio-py-60 { padding-top: 60px !important }
+.lio-pr-60, .lio-px-60 { padding-right: 60px !important }
+.lio-pb-60, .lio-py-60 { padding-bottom: 60px !important }
+.lio-pl-60, .lio-px-60 { padding-left: 60px !important }
+.lio-p-70 { padding: 70px !important }
+.lio-pt-70, .lio-py-70 { padding-top: 70px !important }
+.lio-pr-70, .lio-px-70 { padding-right: 70px !important }
+.lio-pb-70, .lio-py-70 { padding-bottom: 70px !important }
+.lio-pl-70, .lio-px-70 { padding-left: 70px !important }
+.lio-p-80 { padding: 80px !important }
+.lio-pt-80, .lio-py-80 { padding-top: 80px !important }
+.lio-pr-80, .lio-px-80 { padding-right: 80px !important }
+.lio-pb-80, .lio-py-80 { padding-bottom: 80px !important }
+.lio-pl-80, .lio-px-80 { padding-left: 80px !important }
+.lio-p-100 { padding: 100px !important }
+.lio-p-90 { padding: 90px !important }
+.lio-pt-90, .lio-py-90 { padding-top: 90px !important }
+.lio-pr-90, .lio-px-90 { padding-right: 90px !important }
+.lio-pb-90, .lio-py-90 { padding-bottom: 90px !important }
+.lio-pl-90, .lio-px-90 { padding-left: 90px !important }
+.lio-p-100 { padding: 100px !important }
+.lio-pt-100, .lio-py-100 { padding-top: 100px !important }
+.lio-pr-100, .lio-px-100 { padding-right: 100px !important }
+.lio-pb-100, .lio-py-100 { padding-bottom: 100px !important }
+.lio-pl-100, .lio-px-100 { padding-left: 100px !important }
+.lio-p-130 { padding: 130px !important }
+.lio-pt-130, .lio-py-130 { padding-top: 130px !important }
+.lio-pr-130, .lio-px-130 { padding-right: 130px !important }
+.lio-pb-130, .lio-py-130 { padding-bottom: 130px !important }
+.lio-pl-130, .lio-px-130 { padding-left: 130px !important }
+.lio-p-150 { padding: 150px !important }
+.lio-pt-150, .lio-py-150 { padding-top: 150px !important }
+.lio-pr-150, .lio-px-150 { padding-right: 150px !important }
+.lio-pb-150, .lio-py-150 { padding-bottom: 150px !important }
+.lio-pl-150, .lio-px-150 { padding-left: 150px !important }
+/*== images / shodow ==*/
+.lio-circle-img { border-radius: 50%; }
+.lio-rounded-img, .lio-rounded-img img, .lio-rounded { border-radius: 8px; }
+.lio-xl-rounded-img, .lio-xl-rounded-img img, .lio-xl-rounded { border-radius: 20px; }
+.img-has-shadow { -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.10); -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.10); box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.10); }
+.lio-shadow { box-shadow: 0 2.8px 0.3px -15px rgba(0, 0, 0, 0.5), 0 6.1px 1.5px -15px rgba(0, 0, 0, 0.383), 0 10px 4.1px -15px rgba(0, 0, 0, 0.311), 0 14.5px 8.7px -15px rgba(0, 0, 0, 0.246), 0 20.2px 17.4px -15px rgba(0, 0, 0, 0.18), 0 30px 50px -15px rgba(0, 0, 0, 0.11); }
+/*== borders ==*/
+.lio-border-top { border-top: 1px solid rgba(23,50,164,0.05); }
+.lio-border-right { border-right: 1px solid rgba(23,50,164,0.05); }
+.lio-border-bottom { border-bottom: 1px solid rgba(23,50,164,0.05); }
+.lio-border-left { border-left: 1px solid rgba(23,50,164,0.05); }
+.lio-border-top-2px { border-left: 2px solid rgba(23,50,164,0.05); }
+.lio-border-right-2px { border-left: 2px solid rgba(23,50,164,0.05); }
+.lio-border-bottom-2px { border-left: 2px solid rgba(23,50,164,0.05); }
+.lio-border-left-2px { border-left: 2px solid rgba(23,50,164,0.05); }
+.lio-border-2px { border: 2px solid #ccc; }
+.lio-border-top-none { border-top-width: 0; }
+.lio-border-right-none { border-right-width: 0; }
+.lio-border-bottom-none { border-bottom-width: 0; }
+.lio-border-left-none { border-left-width: 0; }
+.lio-border-none { border-width: 0 !important; }
+/*== absolute positions ==*/
+.position-relative { position: relative; }
+.absolute-bottom-right { position: absolute; right: 0; bottom: 0; }
+.absolute-bottom-left { position: absolute; left: 0; bottom: 0; }
+.absolute-top-right { position: absolute; right: 0; top: 0; }
+.absolute-top-left { position: absolute; left: 0; top: 0; }
+/*== spacer == */
+.spacer { display: block; width: 100%; }
+.spacer::after { content: ""; display: block; clear: both; }
+.spacer-10 { height: 10px; }
+.spacer-20 { height: 20px; }
+.spacer-30 { height: 30px; }
+.spacer-40 { height: 40px; }
+.spacer-50 { height: 50px; }
+.spacer-100 { height: 100px; }
+/*== misc ==*/
+.text-decoration-underline { text-decoration: underline; }
+.z-index { position: relative; z-index: 99; }
+.overflow-visible { overflow: visible; }
+.overflow-hidden { overflow: hidden; }
+/*----------------------------------------*/
+/*----- 5 Lists -----*/
+/*----------------------------------------*/
+ul, ol { margin: 0 0 10px 0; padding: 0; list-style-position: outside; display: block; }
+li > ul, li > ol { margin-top: 10px; margin-bottom: 0; margin-left: 1.5em; }
+ol li, ul li { margin-bottom: 10px; }
+.lio-list, .lio-list-compact { list-style-type: none; }
+.lio-list li { display: block; margin-bottom: 10px; }
+.lio-list-compact li { display: block; margin-bottom: 0; }
+/*== inline list ==*/
+.lio-list-inline, .lio-list-inline.lio-list-left, .lio-list-inline.lio-list-right, .lio-icon-list { display: block; width: 100%; margin: 0; }
+.lio-list-inline li { padding: 0 10px; margin: 0; background: none; list-style-type: none; display: inline-block !important; }
+.lio-list-left li { text-align: left; padding: 0 20px 0 0; margin: 0; }
+.lio-list-right li { text-align: right; padding: 0 0 0 20px; margin: 0; }
+/*== icon list ==*/
+.lio-icon-list li { position: relative; padding: 0; margin: 0 0 20px 0; background: none; list-style-type: none; }
+.lio-icon-list i { margin-right: 15px; vertical-align: middle; }
+.lio-icon-list.lio-icon-scale i { font-size: 1.5em; }
+.lio-list-inline.lio-icon-list li { padding: 0; margin: 0 20px; }
+/*== border list ==*/
+.lio-list-block li { background: none; list-style-type: none; display: block; padding: 0 0 10px 0; margin: 0 0 10px 0; }
+/*== border list ==*/
+.lio-list-border li { background: none; list-style-type: none; display: block; padding: 0 0 10px 0; margin: 0 0 10px 0; border-style: solid; border-width: 0 0 1px 0; }
+.lio-list-border li:last-child { border: 0; margin-bottom: 0; }
+/*----------------------------------------*/
+/*----- 6 Buttons -----*/
+/*----------------------------------------*/
+.lio-btn, input[type="submit"], input[type="reset"] { width: auto; height: auto; position: relative; display: inline-block; padding: 10px 30px; cursor: pointer; border-width: 1px; border-style: solid; border-radius: 0; text-decoration: none; outline: none; -webkit-backface-visibility: hidden; vertical-align: middle; text-align: center; font-size: 20px; line-height: 28px; }
+.lio-btn-rounded { border-radius: 8px; }
+.lio-btn i { font-size: 16px; margin-right: 10px; }
+.lio-btn:focus { outline: none; }
+/*----------------------------------------*/
+/*----- 7 Layout -----*/
+/*----------------------------------------*/
+.lio-small-box { padding: 50px; }
+/* page layouts */
+.lio-sidebar { width: 450px; max-width: 35%; margin-top: 0; box-sizing: border-box; }
+.lio-has-right-sidebar { width: 100%; display: flex; flex-direction: row; }
+.lio-has-right-sidebar .lio-main { width: 100%; padding-right: 50px; box-sizing: border-box; }
+.lio-has-left-sidebar { width: 100%; display: flex; flex-direction: row-reverse; }
+.lio-has-left-sidebar .lio-main { width: 100%; padding-left: 50px; box-sizing: border-box; }
+.page-pt { padding-top: 100px; }
+.page-pb { padding-bottom: 100px; }
+/*----------------------------------------*/
+/*----- 8 Sections -----*/
+/*----------------------------------------*/
+.lio-section { position: relative; }
+/* section backgrounds */
+.lio-section-center-bg { background-position: center center; background-repeat: no-repeat; background-size: auto; }
+.lio-section-with-bg { background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.lio-section-fixed-bg { background-position: center center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+.lio-bg-size-auto { background-size: auto; }
+.lio-bg-size-contain { background-size: contain; }
+.lio-bg-position-top { background-position: top; }
+.lio-bg-position-right { background-position: right; }
+.lio-bg-position-bottom { background-position: bottom; }
+.lio-bg-position-left { background-position: left; }
+.lio-bg-position-center { background-position: center center; }
+.lio-bg-position-center-top { background-position: center top; }
+.lio-bg-position-center-bottom { background-position: center bottom; }
+.lio-bg-position-right-bottom { background-position: right bottom; }
+.lio-bg-position-left-bottom { background-position: left bottom; }
+.lio-bg-no-repeat { background-repeat: no-repeat; }
+/* overlay */
+.lio-overlay { width: 100%; height: 100%; position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 1; background: radial-gradient(45.1% 44.7% at 52.6% 42.8%, #522a2c 0%, #0a0a0a 100%); mix-blend-mode: multiply; opacity: .9; }
+.lio-overlay-content { position: relative; z-index: 99; }
+/*----------------------------------------*/
+/*----- 9 Hero Section -----*/
+/*----------------------------------------*/
+/*== padding top - equals to height of header ==*/
+.lio-hero-section-top-padding { padding-top: 115px; }
+
+/*== small screens padding top - equals to height of header ==*/
+@media (max-width: 992px) {
+.lio-hero-section-top-padding { padding-top: 80px; }
+}
+/*== big hero text ==*/
+.lio-hero-heading { display: block; margin-bottom: 20px; font-size: 6.250em; line-height: 1.2em; height: 125px; }
+.lio-hero-heading::after { content: ''; display: block; width: 100%; height: 5px; background-size: 100% 100%; background-repeat: no-repeat; }
+.lio-hero-subtext { margin: 0; font-size: 4.000em; line-height: 1.1em; }
+/*== typing text for small screens - fluctuation override ==*/
+@media (max-width: 767px) { 
+.lio-hero-typed { min-height: 170px; } 
+}
+/*----------------------------------------*/
+/*----- 10 Header -----*/
+/*----------------------------------------*/
+#lio-header-global { display: block; padding: 30px 50px; margin: 0; }
+#lio-header-global.on-scroll { padding: 15px 50px; margin: 0; z-index: 999; box-shadow: 0 2px 15px 0 rgba(0,0,0,.03); }
+.lio-header-left { min-width: 140px; /* if long menu - set min-width equal to logo width for actual size logo */ }
+/*== logo ==*/
+#lio-header-global .logo-alt, #lio-header-global.on-scroll .logo-default { display: none; }
+#lio-header-global.on-scroll .logo-alt, #lio-header-global .logo-default { display: block; }
+/*== contact ==*/
+.lio-header-contact { font-size: 29px; }
+.lio-header-contact i { margin-right: 10px; }
+/*== Menu  ==*/
+.main-navigation { position: relative; margin-right: -20px; padding: 0; float: right; }
+.main-navigation .sf-menu:first-child > li a { position: relative; padding: 5px 0; margin-right: 20px; font-size: 14px; overflow: hidden; text-transform: uppercase; }
+.main-navigation .sf-menu:first-child > li a.active:before { transition-delay: .3s; }
+.main-navigation .sf-menu:first-child > li li a { line-height: 1em; padding: 12px 20px; }
+/*----------------------------------------*/
+/*----- 11 Responsive header -----*/
+/*----------------------------------------*/
+.lio-responsive-header { padding: 20px 0; box-shadow: 0 2px 40px 0 hsla(240,0%,6%,.05); z-index: 999; }
+.lio-responsive-header .container { position: relative; }
+.lio-responsive-header .lio-logo.logo-default { display: inline-block; }
+.lio-responsive-header, .slicknav_menu, #lio-menu-button { display: none; }
+#lio-menu-button { padding: 10px; z-index: 9999; position: absolute; right: 0; top: 50%; margin-top: -20px; }
+#lio-menu-button:focus { outline: none; }
+.lio-responsive-header-menu { position: relative; }
+.slicknav_menu { position: relative; z-index: 999; }
+/*== mobile hamburger ==*/
+.lio-hamburger { display: inline-block; padding: 0; margin: 0; cursor: pointer; transition-timing-function: linear; transition-duration: .3s; transition-property: opacity, filter; text-transform: none; border: 0; overflow: visible; color: inherit; background-color: transparent; }
+.lio-hamburger-lines-wrapper { position: relative; display: inline-block; width: 30px; height: 20px; margin: 0 auto; }
+.lio-hamburger-lines, .lio-hamburger-lines:after, .lio-hamburger-lines:before { position: absolute; width: 30px; height: 2px; transition-timing-function: ease; transition-duration: .3s; transition-property: transform; }
+.lio-hamburger-lines:after, .lio-hamburger-lines:before { display: block; content: ''; }
+.lio-hamburger-lines { display: block; top: 0; transition: background-color 0s linear .13s; }
+.lio-hamburger-lines:before { top: 9px; transition: top .1s cubic-bezier(.33333, .66667, .66667, 1) .2s, transform .13s cubic-bezier(.55, .055, .675, .19); }
+.lio-hamburger-lines:after { top: 18px; transition: top .2s cubic-bezier(.33333, .66667, .66667, 1) .2s, transform .13s cubic-bezier(.55, .055, .675, .19); }
+.lio-hamburger.is-active .lio-hamburger-lines { transition-delay: .22s; background-color: transparent!important; }
+.lio-hamburger.is-active .lio-hamburger-lines:before { top: 0; transition: top .1s cubic-bezier(.33333, 0, .66667, .33333) .15s, transform .13s cubic-bezier(.215, .61, .355, 1) .22s; transform: translate3d(0, 10px, 0) rotate(45deg); }
+.lio-hamburger.is-active .lio-hamburger-lines:after { top: 0; transition: top .2s cubic-bezier(.33333, 0, .66667, .33333), transform .13s cubic-bezier(.215, .61, .355, 1) .22s; transform: translate3d(0, 10px, 0) rotate(-45deg); }
+.lio-hamburger.is-active:hover, .lio-hamburger:hover { opacity: 1; }
+/*== slicknav menu ==*/
+.slicknav_nav { border: 0; margin: 0; padding: 20px 0 0 0; position: absolute; top: 0; left: 0; right: 0; }
+.slicknav_menu { padding: 0; margin: 0; border: 0; }
+.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar { margin-top: 5px; }
+.slicknav_nav { clear: both; }
+.slicknav_nav ul, .slicknav_nav li { display: block; margin-bottom: 0; }
+.slicknav_nav ul { margin: 0; padding: 0; }
+.slicknav_nav .slicknav_item { cursor: pointer; }
+.slicknav_nav .slicknav_item a, .slicknav_nav .slicknav_parent-link a { display: inline; }
+.slicknav_menu::before, .slicknav_menu::after { content: ""; display: table; }
+.slicknav_menu::after { clear: both; }
+.slicknav_nav a { display: block; position: relative; outline: medium none; padding: 15px 0; margin: 0; text-align: left; text-decoration: none; -webkit-transition: all .3s ease; transition: all .3s ease; }
+.slicknav_nav li { border-width: 0 0 1px 0; border-style: solid; position: relative; margin: 0 10px; }
+.slicknav_nav li:last-child { border: 0; }
+.slicknav_nav .slicknav_arrow { font-size: 12px; margin: 0 0 0 0.4em; }
+.slicknav_menu .slicknav_menutxt { text-shadow: none; }
+.slicknav_nav .slicknav_item a, .slicknav_nav .slicknav_parent-link a { margin: 0; padding: 0; }
+.slicknav_nav .slicknav_row { padding: 15px 0; margin: 2px 0; }
+.slicknav_nav a:hover, .slicknav_nav .slicknav_row:hover { border-radius: 0; background: transparent; }
+.slicknav_menu .sub-menu { margin: 0 0 0 20px; }
+.slicknav_collapsed .slicknav_arrow::after { font-family: 'icomoon'; content: "\f107"; }
+.slicknav_open .slicknav_arrow::after { font-family: 'icomoon'; content: "\f106"; }
+.slicknav_open .slicknav_collapsed .slicknav_arrow::after { font-family: 'icomoon'; content: "\f107"; }
+.slicknav_collapsed .slicknav_arrow::after, .slicknav_open .slicknav_arrow::after, .slicknav_open .slicknav_collapsed .slicknav_arrow::after { float: right; font-size: 17px; margin-top: -2px; }
+.slicknav_nav .dropdown-item { border-bottom: 1px solid #ccc; }
+.lio-responsive-header .sf-with-ul:after, .lio-responsive-header ul ul .sf-with-ul:after { content: none; }
+.lio-responsive-header ul ul .sf-with-ul:after { content: none; }
+/*----------------------------------------*/
+/*----- 12 Footer -----*/
+/*----------------------------------------*/
+#lio-footer { padding: 30px 0; }
+/*== copyright list ==*/
+.lio-list-copyright { display: block; width: 100%; margin: 0; text-align: right; }
+.lio-list-copyright li { background: none; list-style-type: none; display: inline-block; padding: 0; margin: 0; }
+.lio-list-copyright li::after { content: ''; margin: 0 7px 0 9px; border-right: 1px solid #5d4e58; }
+.lio-list-copyright li:last-child::after { border: none; }
+/*----------------------------------------*/
+/*----- 13 Forms -----*/
+/*----------------------------------------*/
+form { margin: 0; padding: 0; z-index: 0; }
+form p { margin: 0 0 10px 0; padding: 0; }
+input[type=radio], input[type=checkbox] { margin: 0 5px 0 0; vertical-align: baseline; }
+label { width: 100%; height: auto; line-height: 1.2em; font-weight: bold; }
+form label.error { line-height: 1em; font-weight: normal; }
+select, textarea, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="number"], input[type="tel"], input[type="search"] { position: relative; display: block; width: 100%; padding: 15px; margin: 0 0 4px 0; border-width: 1px; border-style: solid; border-radius: 8px; font-size: 14px; font-weight: 400; line-height: 20px !important; vertical-align: top; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+textarea { width: 100% !important; height: auto; }
+.antispam { display: none; }
+form label.error { font-size: 0.665em; letter-spacing: 0.2px; }
+/*===== form column styles =====*/
+.lio-form-row, .lio-form-row-2col, .lio-form-row-3col, .lio-form-row-unequal, .lio-form-row-2col-unequal { margin-right: -5px; margin-left: -5px }
+.lio-form-column { position: relative; min-height: 1px; padding-right: 5px; padding-left: 5px; margin-bottom: 5px; width: 50%; float: left; }
+.lio-for-row::before, .lio-form-row-2col::before, .lio-form-row-3col::before, .lio-form-row-unequal::before, .lio-form-row-2col-unequal::before { display: table; content: "" }
+.lio-for-row::after, .lio-form-row-2col::after, .lio-form-row-3col::after, .lio-form-row-unequal::after, .lio-form-row-2col-unequal::after { clear: both }
+.lio-form-row-2col .lio-form-column { width: 50%; }
+.lio-form-row-3col .lio-form-column { width: 33.33333333% }
+.lio-form-row-unequal .lio-form-column { width: 60% }
+.lio-form-row-unequal .lio-form-column:last-child { width: 40% }
+.lio-form-row-2col-unequal .lio-form-column { width: 70%; }
+.lio-form-row-2col-unequal .lio-form-column:last-child { width: 30%; }
+/*===== subscribe column styles =====*/
+.lio-subscribe-form { position: relative; }
+.lio-subscribe-form .lio-subscribe-btn { position: absolute; right: 1px; top: 1px; border-radius: 7px; }
+/*----------------------------------------*/
+/*----- 14 Elements -----*/
+/*----------------------------------------*/
+/*===== texts =====*/
+.lio-section-heading { margin-bottom: 20px; }
+.lio-tagline { text-transform: uppercase; font-size: 14px; margin-bottom: 0; }
+/*===== blockquote =====*/
+.lio-blockquote { border-left: 2px solid #333644; padding: 5px 0 5px 30px; font-size: 34px; line-height: 46px; font-weight: bold; letter-spacing: -1px; }
+/*===== feature =====*/
+.lio-feature { margin-bottom: 30px; }
+.lio-feature-img { position: relative; }
+.lio-feature-img i, .lio-feature-img img { position: relative; z-index: 9; }
+.lio-feature-content p:last-child { margin-bottom: 0; }
+/* top img position */
+.lio-feature-top .lio-feature-heading { margin-bottom: 30px; }
+.lio-feature-top .lio-feature-img { margin-bottom: 35px; }
+.lio-feature-top.text-center .lio-feature-img { margin-right: auto; margin-bottom: 35px; margin-left: auto; }
+.lio-feature-top.text-left .lio-feature-img { margin-right: 0; margin-bottom: 35px; margin-left: 0; }
+.lio-feature-top.text-right .lio-feature-img { margin-right: 0; margin-bottom: 35px; margin-left: auto; }
+/* left img position */
+.lio-feature-left { width: 100%; display: flex; flex-direction: row; text-align: left; }
+.lio-feature-left .lio-feature-img { max-width: 50%; flex: 0 0 auto; margin-right: 30px; }
+.lio-feature-left h3, .lio-feature-left h4, .lio-feature-left h5 { margin-bottom: 0; }
+/* right img position */
+.lio-feature-right { width: 100%; display: flex; flex-direction: row-reverse; text-align: right; }
+.lio-feature-right .lio-feature-img { max-width: 50%; flex: 0 0 auto; margin-left: 30px; }
+.lio-feature-right h3, .lio-feature-right h4, .lio-feature-right h5 { margin-bottom: 0; }
+/* icon feature */
+.lio-icon-feature .lio-feature-img i { font-size: 48px; line-height: 52px; font-weight: normal; color: inherit; }
+.lio-feature-circle-icon .lio-feature-img { width: 100px; height: 100px; line-height: 100px; border-radius: 50%; text-align: center; }
+.lio-feature-circle-icon .lio-feature-img img { max-width: 60px; width: 60px; }
+.lio-feature-circle-icon .lio-feature-img i { font-size: 48px; line-height: 100px; font-weight: normal; }
+.lio-feature-square-icon .lio-feature-img { width: 100px; height: 100px; line-height: 100px; border-radius: 0; text-align: center; }
+.lio-feature-square-icon .lio-feature-img img { max-width: 60px; width: 60px; }
+.lio-feature-square-icon .lio-feature-img i { font-size: 48px; line-height: 100px; font-weight: normal; }
+/*===== box feature =====*/
+.lio-box-feature { padding: 30px 20px; text-align: center; border-radius: 8px; }
+.lio-box-feature .lio-feature-img img { width: 64px; }
+/*===== Testimonial =====*/
+.lio-testimonial-content { position: relative; padding: 80px 50px 50px 50px; border-radius: 10px; }
+.lio-testimonial-content::before { content: '"'; display: inline-block; position: absolute; top: 55px; left: 30px; font-size: 60px; }
+/* client info */
+.lio-client-info { position: relative; display: table; margin-top: 40px; margin-left: 30px; }
+.lio-testimonial-user, .lio-testimonial-user-info { display: table-cell; vertical-align: middle; }
+.lio-testimonial-user-info { padding-left: 15px; }
+.lio-client-name { margin: 5px 0 0 0; line-height: 1em; }
+.lio-client-job { display: inline-block; }
+.lio-testimonial-user { width: 60px; height: 60px; }
+.lio-testimonial-user img { width: 60px; height: 60px; border-radius: 30px; border: 2px solid #eee; }
+.lio-testimonial-content::after { display: block; content: ''; width: 0; height: 0; border-style: solid; border-width: 0 18px 18px 0; border-color: transparent #fff transparent transparent; position: absolute; left: 30px; bottom: -18px; }
+/*===== About =====*/
+.lio-about-img { position: relative; margin-bottom: 20px; }
+.lio-about-sign { position: absolute; right: 20px; bottom: -10px; -webkit-transform: rotate(-20deg); transform: rotate(-20deg); width: auto; max-width: none; }
+.lio-about-social { position: absolute; top: 20px; right: 20px; }
+.lio-about-social .lio-social-list a { width: 50px; height: 50px; line-height: 50px; border-radius: 4px; }
+/*===== Pricing =====*/
+.lio-pricing { position: relative; padding: 50px 30px; text-align: center; border-radius: 8px; }
+.lio-pricing-heading { margin-bottom: 15px; }
+.lio-price { margin: 30px 0; font-size: 80px; line-height: 80px; font-weight: bold; }
+.lio-price span { font-size: 24px; line-height: 32px; }
+.lio-price sup { font-size: 24px; line-height: 76px; margin-right: 5px; vertical-align: top; }
+.lio-list-pricing li { display: block; padding-bottom: 5px; margin-bottom: 5px; }
+.lio-pricing .lio-btn { margin-top: 20px; }
+.lio-pricing-label { position: absolute; left: 0; top: 2px; padding: 3px 10px; border-radius: 6px 6px 0 0; -webkit-transform: translateY(-100%); transform: translateY(-100%); z-index: 1; font-size: 14px; font-weight: 600; text-transform: uppercase; }
+/*===== blog post slider =====*/
+.lio-blog-item { display: table; }
+.lio-blog-img, .lio-blog-content { display: table-cell; vertical-align: middle; }
+.lio-blog-img { width: 40%; }
+.lio-blog-content { padding-left: 30px; }
+.lio-blog-category { font-weight: 600; }
+.lio-blog-category::before { font-family: 'icomoon'; content: "\f07b"; margin-right: 10px; font-weight: normal; }
+/*===== Accordion =====*/
+.lio-accordion { border: 0; }
+.lio-accordion .accordion-item { border: 0; border-radius: 4px; margin-bottom: 10px; }
+.lio-accordion .accordion-body { padding: 5px 30px 20px 30px; border: 0; border-radius: 0 0 4px 4px; }
+.lio-accordion .accordion-button { padding: 20px 30px; border: 0; border-radius: 4px; font-size: 20px; line-height: 30px; }
+.lio-accordion .accordion-button::after { font-family: 'icomoon'; content: "\f0d7"; font-size: 16px; background-image: none; width: auto; height: auto; }
+.lio-accordion .accordion-button:focus { border: 0; outline: 0; }
+.lio-accordion .accordion-button:not(.collapsed) { border-radius: 4px 4px 0 0; box-shadow: none !important; }
+/*===== Video Box =====*/
+.lio-video-box { position: relative; z-index: 1; }
+.lio-video-box img { max-width: 100%; width: 100%; }
+.lio-video-tagline { text-align: center; margin: -10px 0 0 0; }
+.lio-video-pulse-wrapper { position: absolute; top: 47%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 9; }
+.lio-video-pulse { position: relative; width: 120px; height: 120px; z-index: 1; }
+.lio-video-pulse .pulse { position: absolute; width: 120px; height: 120px; background: rgba(255, 255, 255, 0.4); opacity: 0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; border-radius: 50%; background-clip: padding-box; -webkit-animation: video-pulse 3s ease-in-out infinite; animation: video-pulse 3s ease-in-out infinite; }
+.lio-video-button { display: inline-block; position: absolute; top: 50%; left: 50%; width: 50px; height: 50px; line-height: 50px; text-align: center; border-radius: 50%; margin-left: -25px; margin-top: -25px; z-index: 9; }
+.lio-video-button:after { font-family: 'icomoon'; content: "\f04b"; font-size: 16px; vertical-align: middle; line-height: 50px; margin-left: 2px; }
+.lio-video-pulse .pulse-1 { -webkit-animation-delay: 0s; animation-delay: 0s; }
+.lio-video-pulse .pulse-2 { -webkit-animation-delay: 1s; animation-delay: 1s; }
+.lio-video-pulse .pulse-3 { -webkit-animation-delay: 2s; animation-delay: 2s; }
+/*===== video-pulse =====*/
+ @-webkit-keyframes video-pulse {
+ 0% {
+ -webkit-transform: scale(0.2, 0.2);
+ transform: scale(0.2, 0.2);
+ opacity: 0;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+ 50% {
+ opacity: 0.9;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+ 100% {
+ -webkit-transform: scale(0.9, 0.9);
+ transform: scale(0.9, 0.9);
+ opacity: 0;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+}
+ @keyframes video-pulse {
+ 0% {
+ -webkit-transform: scale(0.2, 0.2);
+ transform: scale(0.2, 0.2);
+ opacity: 0;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+ 50% {
+ opacity: 0.9;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+ 100% {
+ -webkit-transform: scale(0.9, 0.9);
+ transform: scale(0.9, 0.9);
+ opacity: 0;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+}
+/*===== preloader =====*/
+.lio-preloader { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; margin: auto; opacity: 1; -webkit-transition: linear .3s ease; -moz-transition: linear .3s ease; transition: linear .3s ease; z-index: 9999; }
+.lio-preloader .lio-preloader-inner { width: 100vw; height: 100vh; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; overflow: hidden; }
+.lio-loader, .lio-loader:before, .lio-loader:after { width: 1.5em; height: 1.5em; border-radius: 50%; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation: loadtwinkle 1.8s infinite ease-in-out; animation: loadtwinkle 1.8s infinite ease-in-out; }
+.lio-loader { position: relative; font-size: 10px; text-indent: -9999em; -webkit-transform: translateZ(0); -ms-transform: translateZ(0); transform: translateZ(0); -webkit-animation-delay: -0.12s; animation-delay: -0.12s; }
+.lio-loader:before, .lio-loader:after { content: ''; position: absolute; top: 0; }
+.lio-loader:before { left: -2.5em; -webkit-animation-delay: -0.30s; animation-delay: -0.30s; }
+.lio-loader:after { left: 2.5em; }
+@-webkit-keyframes loadtwinkle {
+ 0%, 80%, 100% {
+ box-shadow: 0 2.5em 0 -1.2em;
+}
+ 40% {
+ box-shadow: 0 2.5em 0 0;
+}
+}
+@keyframes loadtwinkle {
+ 0%, 80%, 100% {
+ box-shadow: 0 2.5em 0 -1.2em;
+}
+ 40% {
+ box-shadow: 0 2.5em 0 0;
+}
+}
+/*===== social widget =====*/
+.lio-social-list { margin: 0; }
+.lio-social-list li { list-style: none; display: inline-block; margin: 0 10px; }
+.lio-social-list a { position: relative; display: block; font-size: 16px; line-height: 16px; text-align: center; border: 0; border-radius: 0; z-index: 9; }
+.text-left.lio-social-list li:first-child { margin-left: 0; }
+.text-right.lio-social-list li:last-child { margin-right: 0; }
+/*== large size social ==*/
+.lio-social-large .lio-social-list a { font-size: 32px; line-height: 34px; }
+/*== circle social ==*/
+.lio-social-circle .lio-social-list li { margin: 0 2px; }
+.lio-social-circle.text-left .lio-social-list li:first-child { margin-left: 0; }
+.lio-social-circle.text-right .lio-social-list li:last-child { margin-right: 0; }
+.lio-social-circle .lio-social-list a { display: inline-block; border-width: 0; border-radius: 50%; width: 50px; height: 50px; font-size: 16px; padding: 0; text-align: center; }
+.lio-social-circle .lio-social a::before { line-height: 50px; color: inherit; }
+/*== square social ==*/
+/* .lio-social-square .lio-social-list li { margin: 0; } */
+.lio-social-square.text-left .lio-social-list li:first-child { margin-left: 0; }
+.lio-social-square.text-right .lio-social-list li:last-child { margin-right: 0; }
+.lio-social-square .lio-social-list a { display: inline-block; border-width: 0; font-size: 16px; padding: 0; text-align: center; }
+.lio-social-square .lio-social a::before { color: inherit; }
+/*== social icons ==*/
+.lio-social a::before { display: inline-block; font-family: 'icomoon'; vertical-align: middle; font-weight: normal; }
+.lio-social a:focus { outline: none; }
+.lio-social a.lio-facebook::before { content: "\f09a"; }
+.lio-social a.lio-twitter::before { content: "\f099"; }
+.lio-social a.lio-pinterest::before { content: "\f0d2"; }
+.lio-social a.lio-google::before { content: "\f1a0"; }
+.lio-social a.lio-linkedin::before { content: "\f0e1"; }
+.lio-social a.lio-instagram::before { content: "\f16d"; }
+.lio-social a.lio-skype::before { content: "\f17e"; }
+.lio-social a.lio-vimeo::before { content: "\f27d"; }
+.lio-social a.lio-mail::before { content: "\f0e0"; }
+.lio-social a.lio-youtube::before { content: "\f167"; }
+.lio-social a.lio-dribbble::before { content: "\f17d"; }
+.lio-social a.lio-soundcloud::before { content: "\f1be"; }
+.lio-social a.lio-whatsapp::before { content: "\f232"; }
+.lio-social a.lio-spotify::before { content: "\f1bc"; }
+.lio-social a.lio-etsy::before { content: "\f2d7"; }
+.lio-social a.lio-github::before { content: "\f09b"; }
+.lio-social a.lio-vk::before { content: "\f189"; }
+.lio-social a.lio-digg::before { content: "\f1a6"; }
+.lio-social a.lio-yelp::before { content: "\f1e9"; }
+.lio-social a.lio-telegram::before { content: "\f3fe"; }
+/*----------------------------------------*/
+/*----- 15 Sliders -----*/
+/*----------------------------------------*/
+/*===== slick slider =====*/
+/* lio-slick-has-dots - class to display dot pager */
+/* lio-slick-has-arrows - class to display nav arrows */
+.slick-slide { outline: none; }
+.lio-slick-slider img { max-width: 100%; }
+.lio-rounded-slider img { border-radius: 8px; }
+.lio-slick-has-dots { padding-bottom: 50px; }
+.lio-line-pager { padding-bottom: 100px; }
+/*----------------------------------------*/
+/*----- 16 Misc -----*/
+/*----------------------------------------*/
+/*===== typed =====*/
+.typed-cursor { display: none; }
+/*===== bootstrap overridde for smooth scroll =====*/
+/* default: smooth */
+@media (prefers-reduced-motion:no-preference) {
+:root { scroll-behavior: auto }
+}
+/*===== common transitions =====*/
+.lio-btn, button, input[type="submit"], input[type="reset"], .lio-form-btn, .lio-logo, a:link, select, textarea, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="number"], input[type="tel"], input[type="search"], #lio-header-global, .lio-social a, .lio-icon-list li, .lio-box-feature { -webkit-transition: all .3s ease; transition: all .3s ease }
+/*===== common shadow =====*/
+.lio-box-feature:hover, .lio-testimonial-content, .lio-accordion .accordion-body, .lio-accordion .accordion-button, .lio-accordion .accordion-button:focus { box-shadow: 0 2px 0.3px -15px rgba(0, 0, 0, 0.5), 0 6px 1px -15px rgba(0, 0, 0, 0.3), 0 1px 4px -15px rgba(0, 0, 0, 0.3), 0 1px 1px -15px rgba(0, 0, 0, 0.2), 0 2px 1px -15px rgba(0, 0, 0, 0.1), 0 20px 10px -15px rgba(0, 0, 0, 0.1); }
