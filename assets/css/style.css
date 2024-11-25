@@ -388,12 +388,12 @@ ol li, ul li { margin-bottom: 10px; }
 /*----------------------------------------*/
 /*----- 10 Header -----*/
 /*----------------------------------------*/
-#dtr-header-global { display: block; padding: 30px 50px; margin: 0; }
-#dtr-header-global.on-scroll { padding: 15px 50px; margin: 0; z-index: 999; box-shadow: 0 2px 15px 0 rgba(0,0,0,.03); }
+#lio-header-global { display: block; padding: 30px 50px; margin: 0; }
+#lio-header-global.on-scroll { padding: 15px 50px; margin: 0; z-index: 999; box-shadow: 0 2px 15px 0 rgba(0,0,0,.03); }
 .lio-header-left { min-width: 140px; /* if long menu - set min-width equal to logo width for actual size logo */ }
 /*== logo ==*/
-#dtr-header-global .logo-alt, #dtr-header-global.on-scroll .logo-default { display: none; }
-#dtr-header-global.on-scroll .logo-alt, #dtr-header-global .logo-default { display: block; }
+#lio-header-global .logo-alt, #lio-header-global.on-scroll .logo-default { display: none; }
+#lio-header-global.on-scroll .logo-alt, #lio-header-global .logo-default { display: block; }
 /*== contact ==*/
 .lio-header-contact { font-size: 29px; }
 .lio-header-contact i { margin-right: 10px; }
@@ -408,9 +408,9 @@ ol li, ul li { margin-bottom: 10px; }
 .lio-responsive-header { padding: 20px 0; box-shadow: 0 2px 40px 0 hsla(240,0%,6%,.05); z-index: 999; }
 .lio-responsive-header .container { position: relative; }
 .lio-responsive-header .lio-logo.logo-default { display: inline-block; }
-.lio-responsive-header, .slicknav_menu, #dtr-menu-button { display: none; }
-#dtr-menu-button { padding: 10px; z-index: 9999; position: absolute; right: 0; top: 50%; margin-top: -20px; }
-#dtr-menu-button:focus { outline: none; }
+.lio-responsive-header, .slicknav_menu, #lio-menu-button { display: none; }
+#lio-menu-button { padding: 10px; z-index: 9999; position: absolute; right: 0; top: 50%; margin-top: -20px; }
+#lio-menu-button:focus { outline: none; }
 .lio-responsive-header-menu { position: relative; }
 .slicknav_menu { position: relative; z-index: 999; }
 /*== mobile hamburger ==*/
@@ -455,7 +455,7 @@ ol li, ul li { margin-bottom: 10px; }
 /*----------------------------------------*/
 /*----- 12 Footer -----*/
 /*----------------------------------------*/
-#dtr-footer { padding: 30px 0; }
+#lio-footer { padding: 30px 0; }
 /*== copyright list ==*/
 .lio-list-copyright { display: block; width: 100%; margin: 0; text-align: right; }
 .lio-list-copyright li { background: none; list-style-type: none; display: inline-block; padding: 0; margin: 0; }
@@ -686,8 +686,8 @@ form label.error { font-size: 0.665em; letter-spacing: 0.2px; }
 /*----- 15 Sliders -----*/
 /*----------------------------------------*/
 /*===== slick slider =====*/
-/* dtr-slick-has-dots - class to display dot pager */
-/* dtr-slick-has-arrows - class to display nav arrows */
+/* lio-slick-has-dots - class to display dot pager */
+/* lio-slick-has-arrows - class to display nav arrows */
 .slick-slide { outline: none; }
 .lio-slick-slider img { max-width: 100%; }
 .lio-rounded-slider img { border-radius: 8px; }
@@ -704,6 +704,6 @@ form label.error { font-size: 0.665em; letter-spacing: 0.2px; }
 :root { scroll-behavior: auto }
 }
 /*===== common transitions =====*/
-.lio-btn, button, input[type="submit"], input[type="reset"], .lio-form-btn, .lio-logo, a:link, select, textarea, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="number"], input[type="tel"], input[type="search"], #dtr-header-global, .lio-social a, .lio-icon-list li, .lio-box-feature { -webkit-transition: all .3s ease; transition: all .3s ease }
+.lio-btn, button, input[type="submit"], input[type="reset"], .lio-form-btn, .lio-logo, a:link, select, textarea, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="number"], input[type="tel"], input[type="search"], #lio-header-global, .lio-social a, .lio-icon-list li, .lio-box-feature { -webkit-transition: all .3s ease; transition: all .3s ease }
 /*===== common shadow =====*/
 .lio-box-feature:hover, .lio-testimonial-content, .lio-accordion .accordion-body, .lio-accordion .accordion-button, .lio-accordion .accordion-button:focus { box-shadow: 0 2px 0.3px -15px rgba(0, 0, 0, 0.5), 0 6px 1px -15px rgba(0, 0, 0, 0.3), 0 1px 4px -15px rgba(0, 0, 0, 0.3), 0 1px 1px -15px rgba(0, 0, 0, 0.2), 0 2px 1px -15px rgba(0, 0, 0, 0.1), 0 20px 10px -15px rgba(0, 0, 0, 0.1); }

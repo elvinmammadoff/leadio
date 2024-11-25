@@ -113,11 +113,11 @@ select:-webkit-autofill:focus {
 /*----- Header -----*/
 /*----------------------------------------*/
 /* default - light header */
-#dtr-header-global { background-color: transparent; color: #fff; }
-#dtr-header-global.on-scroll { background-color: #fff; }
+#lio-header-global { background-color: transparent; color: #fff; }
+#lio-header-global.on-scroll { background-color: #fff; }
 /* dark header */
-#dtr-header-global.lio-dark-header { background-color: transparent; color: #fff; }
-#dtr-header-global.lio-dark-header.on-scroll { background-color: #34222e; }
+#lio-header-global.lio-dark-header { background-color: transparent; color: #fff; }
+#lio-header-global.lio-dark-header.on-scroll { background-color: #34222e; }
 /* small screen header */
 .lio-responsive-header { background-color: #fff; }
 .lio-responsive-header.lio-responsive-dark-header { background-color: #34222e; }
@@ -159,10 +159,10 @@ select:-webkit-autofill:focus {
 /*----------------------------------------*/
 /*----- Footer -----*/
 /*----------------------------------------*/
-#dtr-footer { background-color: #34222e; }
-#dtr-footer h1, #dtr-footer h2, #dtr-footer h3, #dtr-footer h4, #dtr-footer h5, #dtr-footer h6 { color: #fff; }
-#dtr-footer, #dtr-footer a { color: #fff; }
-#dtr-footer a:hover { color: #fff; }
+#lio-footer { background-color: #34222e; }
+#lio-footer h1, #lio-footer h2, #lio-footer h3, #lio-footer h4, #lio-footer h5, #lio-footer h6 { color: #fff; }
+#lio-footer, #lio-footer a { color: #fff; }
+#lio-footer a:hover { color: #fff; }
 .lio-list-copyright li::after { border-right-color: #5d4e58; }
 /*----------------------------------------*/
 /*----- Elements -----*/

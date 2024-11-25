@@ -16,12 +16,12 @@ function headerSticky(){
   var windowPos=$(window).scrollTop();
   if( windowPos>20){
     $('.fixed-top').addClass("on-scroll");
-    $('.light-nav-on-scroll').addClass("dtr-menu-light").removeClass("dtr-menu-dark");
-    $('.dark-nav-on-scroll').addClass("dtr-menu-dark").removeClass("dtr-menu-light");
+    $('.light-nav-on-scroll').addClass("lio-menu-light").removeClass("lio-menu-dark");
+    $('.dark-nav-on-scroll').addClass("lio-menu-dark").removeClass("lio-menu-light");
   } else {
     $('.fixed-top').removeClass("on-scroll");
-    $('.light-nav-on-load').addClass("dtr-menu-light").removeClass("dtr-menu-dark");
-    $('.dark-nav-on-load').addClass("dtr-menu-dark").removeClass("dtr-menu-light");
+    $('.light-nav-on-load').addClass("lio-menu-light").removeClass("lio-menu-dark");
+    $('.dark-nav-on-load').addClass("lio-menu-dark").removeClass("lio-menu-light");
   }
 }
 headerSticky();
@@ -55,8 +55,8 @@ $('.sf-menu ul li').mouseover(function(){
  });
 
 // nav scroll
-if($('#dtr-header-global').length){
-  var navoffset = $('#dtr-header-global').height();
+if($('#lio-header-global').length){
+  var navoffset = $('#lio-header-global').height();
   $('.lio-nav a[href^="#"], .lio-scroll-link').on("click", function(e) {
     event.preventDefault();
     $('html, body').animate({
@@ -89,7 +89,7 @@ win.on("scroll", function () {
 
 // sectionAnchor - link to section from another page
 function sectionAnchor() {
-var navoffset = $('#dtr-header-global').height();
+var navoffset = $('#lio-header-global').height();
   var hash = window.location.hash;
   if (hash !== '') {
     setTimeout(function() {
@@ -108,17 +108,17 @@ $('.main-navigation .lio-nav').slicknav({
   closedSymbol: '',
   openedSymbol: '',
   allowParentLinks:"true",
-  menuButton: '#dtr-menu-button',
+  menuButton: '#lio-menu-button',
   closeOnClick:true
 });
 
 // responsive menu button
-$("#dtr-menu-button").on("click", function(e) {
+$("#lio-menu-button").on("click", function(e) {
   $(".slicknav_nav").slideToggle();
 });
 
 // responsive menu hamburger
-var $hamburger = $("#dtr-menu-button");
+var $hamburger = $("#lio-menu-button");
   $hamburger.on("click", function(e) {
   $hamburger.toggleClass("is-active");
 });

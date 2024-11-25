@@ -1,7 +1,7 @@
 @media (max-width: 992px) {
   .container { width: 100%; max-width: 100%; }
-  #dtr-header-global, #dtr-header-global.header-fixed { display: none !important; }
-  .lio-responsive-header, .slicknav_menu, #dtr-menu-button { display: block !important; }
+  #lio-header-global, #lio-header-global.header-fixed { display: none !important; }
+  .lio-responsive-header, .slicknav_menu, #lio-menu-button { display: block !important; }
   .w-sm-100 { width: 100% !important; }
   /*== layout ==*/
   .lio-small-box { padding: 20px; }
@@ -26,7 +26,7 @@
   .lio-hero-heading::after { display: none; }
   .lio-hero-subtext { font-size: 3.000em; }
   /*== footer ==*/
-  #dtr-footer { text-align: center; }
+  #lio-footer { text-align: center; }
   .lio-list-copyright { text-align: center; }
   /*== misc ==*/
   .lio-list-inline li { margin-top: 5px; margin-bottom: 5px; }
